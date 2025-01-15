@@ -3,15 +3,21 @@ default_shell "fish"
 theme "catppuccin-mocha"
 
 keybinds {
+    unbind "Ctrl p" "Ctrl n"
     normal {
-        // bind "Alt p" { SwitchToMode "Pane"; }
-        // bind "Alt n" { SwitchToMode "Resize"; }
+        bind "Alt p" { SwitchToMode "Pane"; }
+        bind "Alt n" { SwitchToMode "Resize"; }
     }
     pane {
-        // bind "Alt p" { SwitchToMode "Normal"; }
+        bind "Alt p" { SwitchToMode "Normal"; }
     }
     resize {
-        // bind "Alt n" { SwitchToMode "Normal"; }
+        bind "Alt n" { SwitchToMode "Normal"; }
    }
 }
 
+ui {
+    pane_frames {
+        rounded_corners true
+    }
+}
