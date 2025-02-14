@@ -1,6 +1,8 @@
 default_shell "fish"
 
-theme "catppuccin-mocha"
+theme "catppuccin-frappe"
+simplified_ui true
+default_layout "compact"
 
 keybinds {
     unbind "Ctrl p" "Ctrl n"
@@ -16,8 +18,3 @@ keybinds {
    }
 }
 
-ui {
-    pane_frames {
-        rounded_corners true
-    }
-}
